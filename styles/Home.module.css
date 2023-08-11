@@ -1,9 +1,22 @@
+/* my new added css */
+.my-header {
+  color: rgb(31, 28, 28)222;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+
+
 .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;  
+  border-radius: 5px;
+  backdrop-filter: blur(2.5px);
 }
 
 .header {
@@ -21,13 +34,12 @@
 .textarea {
   position: relative;
   resize: none;
-  font-size: 1.1rem;
-  padding: 1rem 2rem 1rem 2rem;
-  width: 75vw;
-  border-radius: 0.5rem;
-  border: 1px solid #d9d9e3;
-  background: #ffffff;
-  color: #000;
+  font-size: 1.25rem;
+  padding: 0.95rem 2rem 0.95rem 1.5rem;
+  width: 55vw;
+  border-radius: 0.3rem;
+  background: #ffffff98;
+  color: #2e2929;
   outline: none;
 }
 
@@ -37,21 +49,21 @@
 
 .textarea:focus {
   outline: none;
-  border-color: #6b7280;
-  box-shadow: 0 0 0 3px rgba(156, 163, 175, 0.5);
+  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
 }
 
 .textarea::placeholder {
-  color: #6b7280;
+  color: #3f4042;
 }
 
 .generatebutton {
   position: absolute;
-  top: 0.87rem;
-  right: 1rem;
-  color: rgb(165, 162, 162);
+  top: 0.55rem;
+  right: 0.65rem;
+  color: #3f4042;
   background: none;
-  padding: 0.3rem;
+  padding: 0.4rem;
+  transition: all 120ms ease 60ms;
   border: none;
   display: flex;
 }
@@ -64,13 +76,13 @@
 
 .svgicon {
   transform: rotate(90deg);
-  width: 1.2em;
-  height: 1.2em;
+  width: 1.5em;
+  height: 1.5em;
   fill: currentColor;
 }
 
 .generatebutton:hover {
-  background: #e4575726;
+  background: rgba(238, 238, 238, 0.336);
   border-radius: 0.2rem;
 }
 
@@ -84,7 +96,7 @@
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-  border-radius: 0.5rem;
+  border-radius: 5px;
 }
 
 .messagelistloading {
@@ -95,14 +107,15 @@
 }
 
 .usermessage {
-  background: #ffffff;
+  background: #ffffff8f;
   padding: 1.5rem;
-  color: #000;
+  border: 1.2px solid rgba(192, 192, 192, 0.555);
+  color: #000000;
 }
 
 .usermessagewaiting {
   padding: 1.5rem;
-  color: #000;
+  color: #222020;
   background: linear-gradient(to left, #07080938, #1a1c2024, #07080936);
   background-size: 200% 200%;
   background-position: -100% 0;
@@ -115,15 +128,17 @@
   0% {
     background-position: -100% 0;
   }
+
   100% {
     background-position: 100% 0;
   }
 }
 
 .apimessage {
-  background: #f9fafb;
+  --bg-message: #ffffff7c;
+  background: var(--bg-message);
   padding: 1.5rem;
-  color: #000;
+  color: #1a1818;
   animation: fadein 0.5s;
 }
 
@@ -131,6 +146,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -144,6 +160,7 @@
 
 .markdownanswer {
   line-height: 1.75;
+  font-size: 1.25em;
 }
 
 .markdownanswer a:hover {
@@ -181,9 +198,9 @@
 
 .center {
   display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   justify-content: center;
   align-items: center;
-  position: relative;
   padding: 1rem 0;
   flex-direction: column;
 }
@@ -191,9 +208,7 @@
 .cloud {
   width: 75vw;
   height: 65vh;
-  background: #ffffff;
-  border-radius: 0.5rem;
-  border: 1px solid #d9d9e3;
+  background: #ffffff00;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,9 +251,11 @@
     width: 22rem;
     height: 28rem;
   }
+
   .textarea {
     width: 22rem;
   }
+
   .topnav {
     border: 1px solid black;
     align-items: center;

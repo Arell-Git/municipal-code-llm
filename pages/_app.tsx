@@ -10,7 +10,7 @@ const inter = Inter({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <main className={inter.variable}>
+      <main className={`bg-img ${inter.variable}`}>
         <Component {...pageProps} />
       </main>
     </>

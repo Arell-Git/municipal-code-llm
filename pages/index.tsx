@@ -25,7 +25,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: 'Howdy, its me Jim Schmidt. What would you like to learn about Crested Butte\'s Municipal Code?',
+        message: 'Howdy, its me Ian Billick! What would you like to learn about Crested Butte\'s Municipal Code?',
         type: 'apiMessage',
       },
     ],
@@ -124,7 +124,7 @@ export default function Home() {
     <>
       <Layout>
         <div className="mx-auto flex flex-col gap-4">
-          <h1 className="text-2xl font-bold leading-[1.1] tracking-tighter text-center">
+        <h1 className='text-6xl font-bold mt-16 mb-4 text-center text-shadow-3xl text-[#f2f2f2]'>
             Chat with Crested Butte's Municipal Code
           </h1>
           <main className={styles.main}>
@@ -137,7 +137,7 @@ export default function Home() {
                     icon = (
                       <Image
                         key={index}
-                        src="/jim.png"
+                        src="/ian.png"
                         alt="AI"
                         width="40"
                         height="40"
@@ -176,7 +176,7 @@ export default function Home() {
                       </div>
                       {message.sourceDocs && (
                         <div
-                          className="p-5"
+                          className="p-5 bg-white bg-opacity-50"
                           key={`sourceDocsAccordion-${index}`}
                         >
                           <Accordion
@@ -260,11 +260,6 @@ export default function Home() {
             )}
           </main>
         </div>
-        <footer className="m-auto p-4">
-          <a href="https://twitter.com/mayowaoshin">
-            
-          </a>
-        </footer>
       </Layout>
     </>
   );
