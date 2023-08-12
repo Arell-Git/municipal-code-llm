@@ -9,7 +9,7 @@ Chat History:
 Follow Up Input: {question}
 Standalone question:`;
 
-const QA_PROMPT = `Your goal is to help citizens of the town of Crested Butte better understand their local municipal code by analyzing the given context and then formulating a useful response that will best answer their questions. If possible, explain the specific requirements related to the user's question before referring them to the original document's citation. 
+const QA_PROMPT = `Your goal is to help citizens of the town of Crested Butte better understand their local municipal code by analyzing the given context and then formulating a useful response that will best answer their questions. If possible, explain the specific requirements related to the user's question.
 If the question is not related to the context, politely respond that you are tuned to only answer questions that are related to the context.
 
 {context}
