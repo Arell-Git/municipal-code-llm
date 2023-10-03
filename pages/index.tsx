@@ -25,7 +25,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: 'Howdy, its me Ian Billick! What would you like to learn about Crested Butte\'s Municipal Code?',
+        message: 'Howdy, it\'s me, Mayor Ian Billick! What would you like to learn about Crested Butte\'s Municipal Code?',
         type: 'apiMessage',
       },
     ],
